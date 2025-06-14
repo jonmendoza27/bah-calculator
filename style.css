@@ -1,0 +1,131 @@
+body, html{
+  padding: 0;
+  margin: 0;
+}
+
+.bah-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background: #f5f6f8;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.bah-form {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+}
+
+.bah-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.bah-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.bah-form input[type="text"],
+.bah-form input[type="email"],
+.bah-form input[list="cityList"],
+.bah-form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.checkbox-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.checkbox-wrap input {
+  width: 16px;
+  height: 16px;
+}
+
+.bah-result {
+  flex: 1;
+  background: #001a44;
+  color: white;
+  padding: 30px 28px;
+  border-radius: 12px;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.bah-result h3 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.bah-result p {
+  font-size: 1rem;
+  color: #cbd5e1;
+  margin-bottom: 16px;
+}
+
+.bah-result hr {
+  border: none;
+  height: 1px;
+  background-color: #334155;
+  margin-bottom: 20px;
+}
+
+.rate-row {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 24px;
+}
+
+.monthly-title {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin-bottom: 4px;
+}
+
+.rate-big {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.rate-small {
+  font-size: 1rem;
+  color: #facc15;
+}
+
+.bah-button {
+  background: #facc15;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bah-button:hover {
+  background: #fbbf24;
+}
