@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2025 BAH Calculator</title>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+</style>
+</head>
+<body>
+
+  <div class="bah-wrapper" id="resultBox">
+    <div class="bah-form">
+      <label for="paygrade">Paygrade</label>
+      <select id="paygrade"></select>
+
+      <label class="checkbox-wrap">
+        <input type="checkbox" id="dependents" />
+        <span>I have dependents</span>
+      </label>
+
+      <label for="zip">Duty Station ZIP Code or City</label>
+      <input list="cityList" id="zip" placeholder="e.g., Columbus, MO" />
+      <datalist id="cityList"></datalist>
+
+      <label for="email">Email (optional)</label>
+      <input type="email" id="email">
+    </div>
+
+    <div class="bah-result">
+      <h3 id="locationText">City, State</h3>
+      <p id="rankText">E-4 Without Dependents at MHA123</p>
+      <hr />
+      <div class="rate-row">
+        <div class="monthly-title">Monthly Allowance</div>
+        <div class="rate-big" id="monthlyAmt">$0</div>
+        <div class="rate-small" id="annualAmt">$0 / Year</div>
+      </div>
+      <button class="bah-button" onclick="downloadPDF()">Start a VA Loan with my BAH</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script type="text/javascript" src="assets/script.js"></script>
+
+</body>
+</html>
